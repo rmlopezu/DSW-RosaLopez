@@ -6,18 +6,30 @@
 	<link REL=StyleSheet HREF="estilos.css" TYPE="text/css">
 </head>
 <body>
+	<img align="right" src="unad2.png" alt="UNAD">
+	<h1 align="center">Fase 2 <br> OVI</h1>
 	<nav class="menu menu-basico">
 	    <div class="contenedor-menu menu-contenido">
 	      <ul class="nav menu-nav">
 	      	<li><a href="inicio.html">Inicio</a></li>
-	        <li><a href="conceptos.html">Conceptos</a></li>
+	        <li><a href="#">Conceptos <span class="caret"></span></a>
+	          <ul class="submenu">
+	            <li><a href="conceptos1.html">Conceptos 1</a></li>
+	            <li><a href="conceptos2.html">Conceptos 2</a></li>
+	          </ul>
+        	</li>
 	        <li><a href="#">Recursos <span class="caret"></span></a>
 	          <ul class="submenu">
 	            <li><a href="recurso1.html">Recurso 1</a></li>
 	            <li><a href="recurso2.html">Recurso 2</a></li>
 	          </ul>
         	</li>
-	        <li><a href="autoevaluacion.html">Autoevaluacion</a></li>
+	        <li><a href="#">Autoevaluación <span class="caret"></span></a>
+	          <ul class="submenu">
+	            <li><a href="autoevaluacion1.html">Autoevaluación 1</a></li>
+	            <li><a href="autoevaluacion2.html">Autoevaluación 2</a></li>
+	          </ul>
+        	</li>
 	      </ul>
 	      <ul class="nav menu-nav menu-right">
 	        <li><a href="autor.html">Autor</a></li>
@@ -25,19 +37,23 @@
 	    </div>
 	</nav>
 	<div class="contenedor-cuerpo">
-		<div class="row">
-			<div class="col-md-9">
-				<h1 align="center">Diseño de Sitios Web - Recurso 1</h1>
-			</div>
-			<div class="col-md-3">
-				<img align="center" src="unad.jpg" alt="UNAD">
-			</div>
-		</div>
-		<p><br>A continuación encontrará el <strong>primer vídeo</strong> sobre las etiquetas html.
-	<p>
+		<h1 align="center">Diseño de Sitios Web - Recurso 1</h1>
+		<p><br>A continuación encontrará el <strong>primer vídeo</strong> sobre las etiquetas html.<p>
 	<center>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/5zZzGcq-M3k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</center>		
 	</div>
+	<footer class="panel-footer"><br>
+    	<div class="row">
+			<div class="col-md-8">
+				UNAD - Diseño de Sitios Web<br>
+				Fase 2 - Diseño: Crear el guion y la maquetación para un OVI<br>
+				2020
+			</div>
+			<div class="col-md-4">
+				<img align="center" src="logo_unad.jpg" alt="UNAD">
+			</div>
+		</div>
+    </footer>
 </body>
 </html>
