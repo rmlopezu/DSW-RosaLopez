@@ -30,11 +30,35 @@
 		<h1>
 		Nombre: Rosa María López Urbano
 		<br>Programa: Diseño de Sitios Web
-		<br>Fecha: 31 de agosto de 2020
+		<br>Fecha: <input type="date" id="fecha" name="fecha">
+		<br>Última modificación: 28 de noviembre de 2020
 		<br>Contacto: rmlopezu@unadvirtual.edu.co
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script>
+			$( document ).ready(function() {
+
+			    var now = new Date();
+
+			    var day = ("0" + now.getDate()).slice(-2);
+			    var month = ("0" + (now.getMonth() + 1)).slice(-2);
+
+			    var today = now.getFullYear()+"-"+(month)+"-"+(day) ;
+			    $("#fecha").val(today);
+			});
+			</script>
 		</h1>
 	</div>
 	<h3><a href="planning.html">Enlace a planning (Fase 2)</a></h3>
-	<h3><a href="inicio.html">Enlace a Inicio (Fase 3)</a></h3>
+	<h3><a href="inicio.html">Enlace a Inicio (Fase 3 y 4)</a></h3>
+	<!--
+	
+	<br>
+	<center>
+	<a href="autoevaluacion1.html" target="contenido">Frame1</a> :: <a href="autoevaluacion2.html" target="contenido">Frame2</a> :: <a href="eval_sitio.html" target="contenido">Frame3</a>
+	<br /><br />
+	<iframe name="contenido" allowtransparency="yes" frameborder="0" height="500" width="100%" scrolling="auto" align="top" src="inicio.html"></iframe>
+	</center><br>
+
+	-->
 </body>
 </html>
